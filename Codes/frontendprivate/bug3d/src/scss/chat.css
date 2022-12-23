@@ -1,0 +1,30 @@
+#chat_board {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 250px;
+  z-index: 1000000;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #FFF;
+  border-top-right-radius: 8px;
+  border-style: ridge;
+  border-color: #69E;
+  border-width: 6px;
+  border-bottom-width: 0;
+  border-left-width: 0; }
+  #chat_board #chat_input {
+    height: 33px; }
+  #chat_board #chat_messages {
+    height: 210px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-y: scroll; }
+
+.system-message-container {
+  color: #06F; }
+
+.private-message-container {
+  color: #F0F; }
+
+.text-private-message {
+  color: #F0F; }

@@ -1,0 +1,38 @@
+@import "colors";
+@import "scene";
+
+@keyframes interaction_twinkle {
+  from {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
+#interaction {
+  position: absolute;
+  width: 200px;
+  right: 30vw;
+  top: 20vh;
+  animation: interaction_twinkle 1s infinite;
+}
+
+.interaction-hint {
+  position: absolute;
+  width: 200px;
+  right: 30vw;
+  top: 20vh;
+}
+
+#records {
+  position: absolute;
+  width: 250px;
+  left: 30px;
+  top: 100px;
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px $light-blue;
+}

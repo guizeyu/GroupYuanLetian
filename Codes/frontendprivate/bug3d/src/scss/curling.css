@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+#blocker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#debug-info {
+  position: absolute;
+  color: #BB0;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  top: 2px;
+  left: 10px;
+  text-shadow: 1px 1px 2px #FFF;
+  font-size: 20px; }
+
+#instructions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 20px;
+  color: #FFF; }
+  #instructions .instructions-title {
+    font-size: 30px; }
+
+@keyframes interaction_twinkle {
+  from {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1.2); }
+  to {
+    transform: scale(0.8); } }
+#interaction {
+  position: absolute;
+  width: 200px;
+  right: 30vw;
+  top: 20vh;
+  animation: interaction_twinkle 1s infinite; }
+
+.interaction-hint {
+  position: absolute;
+  width: 200px;
+  right: 30vw;
+  top: 20vh; }
+
+#records {
+  position: absolute;
+  width: 250px;
+  left: 30px;
+  top: 100px;
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px #69E; }

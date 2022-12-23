@@ -1,0 +1,30 @@
+@import "colors";
+@import "scene";
+
+#knowledge {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 450px;
+}
+
+@keyframes interaction_twinkle {
+  from {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
+#interaction {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 30vw;
+  top: 20vh;
+  animation: interaction_twinkle 1s infinite;
+}

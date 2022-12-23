@@ -1,0 +1,49 @@
+@import "colors";
+
+#chat_board {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  $chat-board-height: 250px;
+  height: $chat-board-height;
+  z-index: 1000000;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: $white;
+  border: {
+    top-right-radius: 8px;
+    style: ridge;
+    color: $chat-border;
+    width: 6px;
+    bottom: {
+      width: 0;
+    };
+    left: {
+      width: 0;
+    };
+  }
+
+  $chat-input-height: 33px;
+
+  #chat_input {
+    height: $chat-input-height;
+  }
+
+  #chat_messages {
+    height: $chat-board-height - $chat-input-height - 7px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-y: scroll;
+  }
+}
+
+.system-message-container {
+  color: $system-message;
+}
+
+.private-message-container {
+  color: $private-message;
+}
+
+.text-private-message {
+  color: $private-message;
+}
